@@ -13,3 +13,18 @@ print(commitHash)
 print(commitMessage)
 print(commitDay)
 print(uncommitedChanges)
+
+# generate header
+file = open("git-info.h", "w")
+file.write("#ifndef GIT_INFO_H\n")
+file.write("#define GIT_INFO_H\n")
+file.write("\n")
+
+file.write("#define GIT_BRANCH_NAME\t\tasd\n")
+file.write("#define GIT_HASH\t\t\tasd\n")
+file.write("#define GIT_COMMIT_MESSAGE\tasd\n")
+file.write("#define GIT_DATE\t\t\tasd\n")
+
+file.write("\n")
+file.write("#endif /* GIT_INFO_H */\n")
+file.close()
